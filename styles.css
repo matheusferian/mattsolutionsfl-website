@@ -112,13 +112,13 @@ h4 { font-size: 1rem; }
   color: var(--blue-bright);
   transform: translateY(-2px);
 }
-.btn-whatsapp {
-  background: #25d366;
+.btn-sms {
+  background: #0891b2;
   color: #fff;
-  box-shadow: 0 0 20px rgba(37,211,102,0.25);
+  box-shadow: 0 0 20px rgba(8,145,178,0.25);
 }
-.btn-whatsapp:hover {
-  background: #1ebe5b;
+.btn-sms:hover {
+  background: #0e7490;
   color: #fff;
   transform: translateY(-2px);
 }
@@ -714,6 +714,31 @@ footer h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-tra
   z-index: 9999;
 }
 #toast.show { transform: translateY(0); opacity: 1; }
+
+/* === Language Switcher === */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  background: var(--graphite2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.lang-btn {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  padding: 0.3rem 0.7rem;
+  color: var(--grey-mid);
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition);
+  line-height: 1;
+}
+.lang-btn:hover { color: var(--white); background: rgba(59,130,246,0.2); }
+.lang-btn.active { background: var(--blue); color: #fff; }
+.lang-btn + .lang-btn { border-left: 1px solid var(--border); }
+.nav-mobile .lang-switcher { align-self: flex-start; margin-top: 0.5rem; }
 
 /* === Responsive === */
 @media (max-width: 1024px) {

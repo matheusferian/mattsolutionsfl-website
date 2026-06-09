@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- English pages -->
   <url>
     <loc>https://mattsolutionsfl.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/index-pt.html"/>
     <lastmod>2025-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -10,6 +14,8 @@
 
   <url>
     <loc>https://mattsolutionsfl.com/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/services-pt.html"/>
     <lastmod>2025-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -17,13 +23,17 @@
 
   <url>
     <loc>https://mattsolutionsfl.com/service-areas.html</loc>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/service-areas.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/service-areas-pt.html"/>
     <lastmod>2025-06-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://mattsolutionsfl.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/about-pt.html"/>
     <lastmod>2025-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -31,6 +41,54 @@
 
   <url>
     <loc>https://mattsolutionsfl.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/contact-pt.html"/>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Portuguese pages -->
+  <url>
+    <loc>https://mattsolutionsfl.com/index-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/index-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/"/>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://mattsolutionsfl.com/services-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/services-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/services.html"/>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://mattsolutionsfl.com/service-areas-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/service-areas-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/service-areas.html"/>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mattsolutionsfl.com/about-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/about-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/about.html"/>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mattsolutionsfl.com/contact-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mattsolutionsfl.com/contact-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://mattsolutionsfl.com/contact.html"/>
     <lastmod>2025-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
