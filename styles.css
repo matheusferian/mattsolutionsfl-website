@@ -1038,3 +1038,232 @@ footer h4 {
   .contact-methods { grid-template-columns: 1fr; }
   .cta-banner      { padding: 2rem 1.25rem; }
 }
+
+/* =========================================
+   23. NAVBAR INSTAGRAM ICON
+   ========================================= */
+.nav-ig-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: rgba(255,255,255,0.52);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.nav-ig-btn:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.2);
+}
+.nav-ig-btn svg { display: block; }
+
+/* Mobile nav Instagram link */
+.nav-mobile-ig {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(255,255,255,0.6);
+  padding: 0.62rem 0.75rem;
+  border-radius: var(--radius);
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color var(--transition), background var(--transition);
+}
+.nav-mobile-ig:hover { color: #fff; background: rgba(255,255,255,0.06); }
+.nav-mobile-ig svg   { flex-shrink: 0; }
+
+/* =========================================
+   24. FOOTER FOLLOW / INSTAGRAM
+   ========================================= */
+.footer-follow        { margin-top: 1rem; }
+.footer-follow-label  {
+  font-family: var(--font-heading);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.28);
+  margin-bottom: 0.6rem;
+}
+.footer-ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(255,255,255,0.52);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color var(--transition);
+  padding: 0.4rem 0;
+}
+.footer-ig-link:hover        { color: #fff; }
+.footer-ig-link svg          { flex-shrink: 0; }
+.footer-ig-handle            { font-weight: 500; }
+
+/* =========================================
+   25. INSTAGRAM CARD (contact page)
+   ========================================= */
+.ig-card-wrap { max-width: 640px; margin: 0 auto; }
+.ig-card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition);
+}
+.ig-card:hover { box-shadow: var(--shadow-md); }
+.ig-card-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--soft-black);
+  flex-shrink: 0;
+}
+.ig-card-body          { flex: 1; min-width: 180px; }
+.ig-card-body h3       { font-size: 1rem; margin-bottom: 0.25rem; color: var(--text-heading); }
+.ig-card-handle        { font-size: 0.875rem; color: var(--navy); font-weight: 600; margin-bottom: 0.35rem; }
+.ig-card-desc          { font-size: 0.82rem; color: var(--text-body); margin: 0; }
+.ig-card-btn           { flex-shrink: 0; white-space: nowrap; }
+
+/* =========================================
+   26. TRUST + INSTAGRAM SECTION (home)
+   ========================================= */
+.trust-ig-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.trust-checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+.trust-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-body);
+  font-weight: 500;
+}
+.trust-checklist li svg { color: var(--soft-black); flex-shrink: 0; }
+
+.trust-ig-block { display: flex; justify-content: center; }
+.trust-ig-card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: var(--shadow-sm);
+}
+.trust-ig-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+  color: var(--soft-black);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.trust-ig-text {
+  font-size: 0.9rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+.trust-ig-text strong { color: var(--text-heading); }
+
+/* =========================================
+   27. GOOGLE REVIEWS PLACEHOLDER
+   ========================================= */
+.reviews-placeholder-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+.reviews-placeholder-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.reviews-placeholder-body   { max-width: 520px; }
+.reviews-placeholder-title  {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.6rem;
+}
+.reviews-placeholder-sub    {
+  font-size: 0.875rem;
+  color: var(--text-body);
+  line-height: 1.72;
+}
+.reviews-future-slots {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  justify-content: center;
+}
+.reviews-future-slot {
+  height: 72px;
+  flex: 1;
+  max-width: 160px;
+  background: var(--off-white);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  /* Intentionally empty — reserved for future review cards */
+}
+.reviews-leave-btn { margin-top: 0.5rem; }
+
+/* =========================================
+   28. RESPONSIVE — new sections
+   ========================================= */
+@media (max-width: 768px) {
+  .trust-ig-grid    { grid-template-columns: 1fr; gap: 2rem; }
+  .ig-card          { flex-direction: column; text-align: center; }
+  .ig-card-body     { text-align: center; }
+  .ig-card-btn      { width: 100%; justify-content: center; }
+  .reviews-future-slots { display: none; }
+  .nav-ig-btn       { display: none; } /* hidden on mobile — shown in nav-mobile instead */
+}
+@media (max-width: 480px) {
+  .trust-ig-card    { padding: 1.5rem; }
+  .reviews-placeholder-card { padding: 1.75rem 1.25rem; }
+}
