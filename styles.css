@@ -1040,7 +1040,59 @@ footer h4 {
 }
 
 /* =========================================
-   23. NAVBAR INSTAGRAM ICON
+   23. MOBILE FLAG LANGUAGE SWITCHER
+   ========================================= */
+
+/* Hidden on desktop — desktop uses .lang-switcher (EN/PT text) */
+.nav-flags {
+  display: none;
+  align-items: center;
+  gap: 3px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 9px;
+  padding: 3px 4px;
+  flex-shrink: 0;
+}
+
+.nav-flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: background var(--transition);
+  cursor: pointer;
+  border: 1.5px solid transparent;
+}
+
+.nav-flag:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.nav-flag-active {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.22);
+}
+
+/* Show flags only on mobile — hide desktop lang-switcher there */
+@media (max-width: 768px) {
+  .nav-flags { display: flex; }
+  /* desktop EN/PT text switcher is already hidden at ≤768px via nav-inner rule */
+}
+
+/* Slightly smaller on very small screens */
+@media (max-width: 380px) {
+  .nav-flag  { width: 28px; height: 26px; font-size: 1rem; border-radius: 5px; }
+  .nav-flags { padding: 2px 3px; gap: 2px; }
+}
+
+/* =========================================
+   24. NAVBAR INSTAGRAM ICON
    ========================================= */
 .nav-ig-btn {
   display: inline-flex;
