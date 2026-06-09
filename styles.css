@@ -245,7 +245,7 @@ footer h1, footer h2, footer h3, footer h4,
    5. LOGO & BRAND LOCKUP
    ========================================= */
 
-/* ── Navbar: clean brand lockup (icon + live text) ── */
+/* ── Navbar: two-line brand lockup ── */
 .nav-logo { text-decoration: none; }
 
 .brand-lockup {
@@ -256,27 +256,46 @@ footer h1, footer h2, footer h3, footer h4,
 }
 
 .brand-icon {
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   background: #ffffff;
   border-radius: 8px;
-  padding: 4px;
+  padding: 5px;
   flex-shrink: 0;
   display: block;
 }
 
-.brand-name {
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  line-height: 1;
+}
+
+.brand-primary {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: -0.02em;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
   color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.brand-secondary {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: #C9CDD2;
+  text-transform: uppercase;
   line-height: 1;
   white-space: nowrap;
 }
 
-/* ── Footer logo: full logo image, no container pill ── */
+/* ── Footer logo: full logo, no pill ── */
 .footer-logo { display: inline-block; text-decoration: none; }
 
 .footer-logo-img {
@@ -284,11 +303,11 @@ footer h1, footer h2, footer h3, footer h4,
   height: auto;
   width: auto;
   max-width: 200px;
-  max-height: 60px;
+  max-height: 64px;
   object-fit: contain;
 }
 
-/* ── Legacy .logo-wrap still used in footer in some pages ── */
+/* ── Legacy .logo-wrap (footer fallback) ── */
 .logo-wrap {
   display: inline-flex;
   align-items: center;
@@ -310,15 +329,17 @@ footer h1, footer h2, footer h3, footer h4,
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .brand-icon  { width: 30px; height: 30px; padding: 3px; }
-  .brand-name  { font-size: 1rem; }
+  .brand-icon      { width: 34px; height: 34px; padding: 4px; border-radius: 7px; }
+  .brand-primary   { font-size: 1.2rem; }
+  .brand-secondary { font-size: 0.6rem; letter-spacing: 0.1em; }
   .footer-logo-img { max-width: 170px; max-height: 52px; }
-  .logo-img    { height: 30px; max-width: 160px; }
+  .logo-img        { height: 30px; max-width: 160px; }
 }
 
 @media (max-width: 420px) {
-  .brand-icon  { width: 28px; height: 28px; }
-  .brand-name  { font-size: 0.95rem; }
+  .brand-icon      { width: 30px; height: 30px; padding: 3px; }
+  .brand-primary   { font-size: 1.1rem; }
+  .brand-secondary { font-size: 0.58rem; letter-spacing: 0.08em; }
 }
 
 /* =========================================
