@@ -259,11 +259,12 @@ footer h1, footer h2, footer h3, footer h4,
   width: 40px;
   height: 40px;
   object-fit: contain;
-  background: #ffffff;
+  background: transparent;
   border-radius: 8px;
   padding: 5px;
   flex-shrink: 0;
   display: block;
+  filter: brightness(0) invert(1);
 }
 
 .brand-text {
@@ -305,6 +306,7 @@ footer h1, footer h2, footer h3, footer h4,
   max-width: 200px;
   max-height: 64px;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 /* ── Legacy .logo-wrap (footer fallback) ── */
