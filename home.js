@@ -100,7 +100,7 @@
       const tip = answer.querySelector('[data-k="tip"]');
       tip.textContent = p.tip || '';
       tip.hidden = !p.tip;
-      sms.href = 'sms:+17542708385?&body=' + encodeURIComponent(p.sms);
+      sms.href = 'sms:+15615715637?&body=' + encodeURIComponent(p.sms);
     };
     document.querySelectorAll('input[name="problem"]').forEach(r => r.addEventListener('change', () => {
       const p = PROBLEMS[r.value];

@@ -35,10 +35,10 @@
         form.reset();
         show(PT ? 'Mensagem enviada. Eu respondo em breve.' : "Message sent. I'll get back to you shortly.");
       } else {
-        show(PT ? 'Não foi possível enviar. Ligue ou mande mensagem para (754) 270-8385.' : "Couldn't send it. Call or text (754) 270-8385.");
+        show(PT ? 'Não foi possível enviar. Ligue ou mande mensagem para (561) 571-5637.' : "Couldn't send it. Call or text (561) 571-5637.");
       }
     } catch {
-      show(PT ? 'Não foi possível enviar. Ligue ou mande mensagem para (754) 270-8385.' : "Couldn't send it. Call or text (754) 270-8385.");
+      show(PT ? 'Não foi possível enviar. Ligue ou mande mensagem para (561) 571-5637.' : "Couldn't send it. Call or text (561) 571-5637.");
     } finally {
       btn.textContent = label;
       btn.disabled = false;
