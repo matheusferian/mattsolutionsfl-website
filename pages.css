@@ -1,0 +1,234 @@
+/* Inner pages (services, areas, about, contact) in the new design.
+   Loaded after home.css. Restyles the existing content markup so the copy stays untouched. */
+
+:root {
+  /* aliases used by inline styles in the existing pages */
+  --text-heading: var(--ink);
+  --text-body: #3a3a3c;
+  --text-muted: var(--ink-2);
+  --text-subtle: #8e8e93;
+  --border: var(--rule);
+  --border-subtle: #e8e8ed;
+  --surface: var(--paper);
+  --surface-alt: var(--desk);
+  --navy-card: var(--paper);
+  --blue-bright: var(--navy);
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
+
+.container { width: min(1120px, 100% - 32px); margin-inline: auto; }
+.center { text-align: center; }
+.center .section-sub, .center .section-title { margin-inline: auto; }
+
+/* ---------- page hero ---------- */
+.page-hero { background: #000; color: #fff; padding: clamp(40px, 7vw, 88px) 0 clamp(48px, 7vw, 96px); }
+.page-hero h1 {
+  font-family: var(--display); color: #fff;
+  font-size: clamp(2.4rem, 5.2vw, 4rem); line-height: 1.05; letter-spacing: -0.038em; font-weight: 700;
+  max-width: 14em; text-wrap: balance; margin-top: 8px;
+}
+.page-hero p { margin-top: 18px; max-width: 38em; color: rgba(255,255,255,.82); font-size: clamp(1.0625rem, 1.5vw, 1.25rem); }
+.page-hero .section-label { color: rgba(255,255,255,.7); }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: .875rem; color: rgba(255,255,255,.7); margin-bottom: 20px; }
+.breadcrumb a { color: rgba(255,255,255,.85); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb svg { width: 14px; height: 14px; opacity: .6; }
+
+/* ---------- sections ---------- */
+.section { padding: clamp(56px, 8vw, 104px) 0; }
+.section-alt { background: var(--desk); }
+.section-label { font-size: .9375rem; font-weight: 600; color: var(--ink-2); margin-bottom: 8px; letter-spacing: -0.01em; }
+.section-title, .section h2 {
+  font-family: var(--display); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;
+  font-size: clamp(1.75rem, 3.4vw, 2.6rem); color: var(--ink); text-wrap: balance;
+}
+.section h3 { font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; color: var(--ink); }
+.section-sub { margin-top: 12px; color: var(--ink-2); font-size: 1.1875rem; max-width: 36em; }
+.section p { line-height: 1.6; }
+
+/* ---------- service cards ---------- */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 8px; }
+.service-card {
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 18px;
+  padding: 24px; display: flex; flex-direction: column;
+}
+.section-alt .service-card { border-color: transparent; }
+.service-icon {
+  width: 40px; height: 40px; border-radius: 10px; background: var(--desk); color: var(--ink);
+  display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
+}
+.section-alt .service-icon { background: var(--desk); }
+.service-icon svg { width: 20px; height: 20px; }
+.service-card h3 { font-size: 1.1875rem; margin-bottom: 8px; }
+.service-card p { color: var(--ink-2); font-size: .9375rem; }
+.tag {
+  display: inline-block; padding: 3px 8px; border-radius: 6px;
+  background: var(--desk); color: var(--ink-2);
+  font-size: .8125rem; font-weight: 500;
+}
+.section-alt .tag { background: #fff; }
+.sdc-list { margin-top: 14px; display: grid; gap: 6px; }
+.sdc-list li { position: relative; padding-left: 18px; color: var(--ink-2); font-size: .9375rem; }
+.sdc-list li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--rule); }
+
+/* ---------- areas ---------- */
+.area-section { gap: clamp(24px, 4vw, 48px) !important; }
+.divider { height: 1px; background: var(--rule); margin: 0 0 clamp(40px, 6vw, 64px); }
+.area-services-list li { color: var(--ink-2); }
+
+/* ---------- about ---------- */
+.about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+
+/* ---------- contact ---------- */
+.contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.contact-info { display: grid; gap: 18px; }
+.contact-info-item { display: flex; gap: 14px; align-items: flex-start; padding-bottom: 18px; border-bottom: 1px solid var(--rule); }
+.contact-info-icon { width: 40px; height: 40px; flex: none; border-radius: 10px; background: var(--desk); color: var(--ink); display: flex; align-items: center; justify-content: center; }
+.contact-info-icon svg { width: 20px; height: 20px; }
+.contact-info-label { font-size: .8125rem; color: var(--ink-2); }
+.contact-info-value { font-weight: 600; }
+.contact-info-value a { color: var(--ink); text-decoration: none; }
+.contact-info-value a:hover { color: var(--navy); text-decoration: underline; }
+
+.contact-form { background: var(--desk); border-radius: 24px; padding: clamp(20px, 4vw, 36px); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { display: grid; gap: 6px; margin-bottom: 14px; }
+.form-group label { font-size: .875rem; font-weight: 600; color: var(--ink); }
+.form-group input, .form-group select, .form-group textarea {
+  font: inherit; font-size: 1rem; color: var(--ink);
+  background: #fff; border: 1px solid var(--rule); border-radius: 12px;
+  padding: 12px 14px; min-height: 48px; width: 100%;
+}
+.form-group textarea { min-height: 130px; resize: vertical; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: 3px solid rgba(13,34,87,.25); border-color: var(--navy); }
+.form-group input::placeholder, .form-group textarea::placeholder { color: #8e8e93; }
+.form-group input:user-invalid, .form-group textarea:user-invalid { border-color: #c4302b; }
+.form-submit { margin-top: 6px; }
+.form-submit .btn { width: 100%; }
+.form-note { margin-top: 12px; font-size: .8125rem; color: var(--ink-2); text-align: center; }
+
+/* ---------- FAQ ---------- */
+.faq-list { max-width: 760px; margin: 24px auto 0; }
+.faq-item { border-bottom: 1px solid var(--rule); }
+.faq-question {
+  all: unset; box-sizing: border-box; cursor: pointer; width: 100%;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding: 18px 0; font-weight: 600; font-size: 1.0625rem; color: var(--ink);
+}
+.faq-question:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+.faq-question svg { width: 18px; height: 18px; flex: none; color: var(--ink-2); transition: transform .2s ease; }
+.faq-item.open .faq-question svg { transform: rotate(180deg); }
+.faq-answer { display: none; padding: 0 0 20px; color: var(--ink-2); max-width: 40em; }
+.faq-item.open .faq-answer { display: block; }
+
+/* ---------- Instagram card ---------- */
+.ig-card { display: flex; gap: 16px; align-items: center; background: var(--paper); border: 1px solid var(--rule); border-radius: 18px; padding: 20px; }
+.ig-card-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--desk); display: flex; align-items: center; justify-content: center; flex: none; }
+.ig-card-icon svg { width: 22px; height: 22px; }
+.ig-card-handle { font-weight: 600; }
+.ig-card-desc { color: var(--ink-2); font-size: .9375rem; }
+
+/* ---------- buttons from the old markup ---------- */
+.btn { gap: 8px; }
+.btn svg { width: 17px; height: 17px; }
+.btn-outline, .btn-sms, .btn-call { background: var(--desk); color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule); }
+.btn-outline:hover, .btn-sms:hover, .btn-call:hover { background: #ebebef; }
+
+/* ---------- dark CTA block ---------- */
+.cta-banner {
+  background: var(--ink); color: #f5f5f7; border-radius: 28px;
+  padding: clamp(28px, 5vw, 56px);
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;
+}
+.cta-banner h2 { color: #fff !important; }
+.cta-banner p { color: rgba(255,255,255,.8) !important; }
+.cta-banner .section-label { color: rgba(255,255,255,.7); }
+.cta-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.cta-banner .btn-primary { background: #fff; color: var(--ink); }
+.cta-banner .btn-primary:hover { background: #e8e8ed; }
+.cta-banner .btn-outline, .cta-banner .btn-sms { background: transparent; color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,.35); }
+.cta-banner .btn-outline:hover, .cta-banner .btn-sms:hover { background: rgba(255,255,255,.08); }
+.cta-banner :focus-visible { outline-color: #fff; }
+
+/* ---------- toast (form result) ---------- */
+#toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px);
+  background: var(--ink); color: #fff; padding: 14px 18px; border-radius: 12px;
+  font-size: .9375rem; opacity: 0; pointer-events: none; transition: opacity .2s ease, transform .2s ease; z-index: 200;
+  max-width: calc(100% - 32px);
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+@media (max-width: 900px) {
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .area-section { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 560px) {
+  .form-row { grid-template-columns: 1fr; }
+  .cta-actions .btn { flex: 1 1 100%; }
+}
+
+/* ---------- PT page variants (different markup, same look) ---------- */
+.page-hero-title { color: #fff; font-family: var(--display); font-size: clamp(2.4rem, 5.2vw, 4rem); line-height: 1.05; letter-spacing: -0.038em; font-weight: 700; max-width: 14em; text-wrap: balance; margin-top: 8px; }
+.page-hero-sub { color: rgba(255,255,255,.82) !important; }
+.page-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.page-hero .btn-primary { background: #fff; color: var(--ink); }
+.page-hero .btn-primary:hover { background: #e8e8ed; }
+.page-hero .btn-outline, .page-hero .btn-sms { background: rgba(255,255,255,.12); color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,.38); }
+.page-hero :focus-visible { outline-color: #fff; }
+.section-intro { margin-bottom: 32px; }
+
+.services-detail-grid, .areas-detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+.differentiators-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.service-detail-card, .area-detail-card, .diff-card, .value-card, .remote-cta-box, .contact-method, .quick-action-btn {
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 18px;
+}
+.section-alt .service-detail-card, .section-alt .area-detail-card, .section-alt .diff-card, .section-alt .value-card { border-color: transparent; }
+.service-detail-card, .area-detail-card, .diff-card { padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+.sdc-icon, .area-detail-icon, .diff-icon, .value-icon, .contact-method-icon {
+  width: 40px; height: 40px; flex: none; border-radius: 10px; background: var(--desk); color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+}
+.sdc-icon svg, .area-detail-icon svg, .diff-icon svg, .value-icon svg, .contact-method-icon svg { width: 20px; height: 20px; }
+.sdc-content h3, .area-detail-card h3, .diff-card h3, .value-card h3 { font-size: 1.1875rem; margin-bottom: 6px; }
+.sdc-content p, .area-detail-card p, .diff-card p, .value-card p { color: var(--ink-2); font-size: .9375rem; }
+.area-detail-header { display: flex; align-items: center; gap: 14px; }
+.area-badge { display: inline-block; margin-top: 4px; padding: 3px 8px; border-radius: 6px; background: var(--desk); color: var(--ink-2); font-size: .8125rem; font-weight: 500; }
+
+.about-content p { color: var(--text-body); margin-bottom: 16px; }
+.about-values { display: grid; gap: 12px; }
+.value-card { display: flex; gap: 14px; align-items: flex-start; padding: 18px 20px; }
+
+.remote-support-block { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.remote-list { display: grid; gap: 10px; margin-top: 20px; }
+.remote-list li { display: flex; gap: 10px; align-items: flex-start; color: var(--text-body); }
+.remote-list li svg { width: 18px; height: 18px; flex: none; margin-top: 3px; color: var(--ink); }
+.remote-cta-box { padding: 28px; background: var(--desk); border-color: transparent; }
+.remote-cta-box h3 { font-size: 1.25rem; margin-bottom: 8px; }
+.remote-cta-box p { color: var(--ink-2); margin-bottom: 18px; }
+
+.contact-info-col { display: grid; gap: 14px; align-content: start; }
+.contact-info-title, .contact-form-title { font-family: var(--display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; margin-bottom: 12px; }
+.contact-form-sub { color: var(--ink-2); margin: -4px 0 20px; }
+.contact-info-list { display: grid; gap: 14px; }
+.contact-quick-actions { display: grid; gap: 10px; margin-bottom: 20px; }
+.quick-action-btn { display: flex; align-items: center; gap: 12px; padding: 14px 16px; color: var(--ink); text-decoration: none; font-weight: 600; min-height: 52px; }
+.quick-action-btn:hover { background: var(--desk); }
+.quick-action-btn svg { width: 18px; height: 18px; flex: none; }
+.contact-info-strip { text-align: center; max-width: 820px; margin: 0 auto; }
+.contact-methods { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 24px 0; }
+.contact-method { display: flex; align-items: center; gap: 12px; padding: 14px 16px; text-align: left; }
+.contact-method-label { font-size: .8125rem; color: var(--ink-2); }
+.contact-method-value { font-weight: 600; }
+.contact-method-value a { color: var(--ink); text-decoration: none; }
+.btn-submit { width: 100%; }
+.btn-sm { min-height: 36px; padding: 0 14px; font-size: .9375rem; border-radius: 10px; }
+.req { color: #c4302b; }
+.ig-card-wrap { margin-top: 24px; }
+.ig-card-btn { margin-left: auto; }
+
+@media (max-width: 900px) {
+  .remote-support-block { grid-template-columns: 1fr; }
+}
