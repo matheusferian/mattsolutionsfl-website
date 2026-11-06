@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex">
   <title>Matt Solutions — Home prototype</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="home.css?v=7">
+  <link rel="stylesheet" href="home.css?v=8">
 </head>
 <body>
 
@@ -49,6 +49,29 @@
           <li>On-site, drop-off, or remote</li>
         </ul>
       </div>
+
+      <aside class="picker" aria-labelledby="picker-title">
+        <h2 id="picker-title" class="picker-title">What&rsquo;s going on?</h2>
+        <fieldset class="picker-options">
+          <legend class="visually-hidden">Pick the problem closest to yours</legend>
+          <label><input type="radio" name="problem" value="slow" checked><span>Slow or won&rsquo;t start</span></label>
+          <label><input type="radio" name="problem" value="virus"><span>Virus or pop-ups</span></label>
+          <label><input type="radio" name="problem" value="wifi"><span>Wi-Fi keeps dropping</span></label>
+          <label><input type="radio" name="problem" value="printer"><span>Printer or email</span></label>
+          <label><input type="radio" name="problem" value="files"><span>Lost files</span></label>
+          <label><input type="radio" name="problem" value="web"><span>Website or system</span></label>
+        </fieldset>
+
+        <div class="answer" id="answer" aria-live="polite">
+          <dl>
+            <div><dt>Often caused by</dt><dd data-k="cause">An aging hard drive, too many startup programs, or overheating.</dd></div>
+            <div><dt>What usually fixes it</dt><dd data-k="fix">A diagnosis first. Often an SSD upgrade or a cleanup.</dd></div>
+            <div><dt>Remote help</dt><dd data-k="remote">Sometimes. Hardware problems need a drop-off or visit.</dd></div>
+          </dl>
+          <p class="tip" data-k="tip" hidden></p>
+          <a class="btn btn-primary btn-block" id="answer-sms" href="sms:+17542708385?&amp;body=Hi%20Matt%2C%20my%20computer%20is%20slow%20or%20won%27t%20start.">Text Matt about this</a>
+        </div>
+      </aside>
     </div>
   </section>
 
@@ -212,6 +235,6 @@
   </div>
 </footer>
 
-<script src="home.js?v=7"></script>
+<script src="home.js?v=8"></script>
 </body>
 </html>
