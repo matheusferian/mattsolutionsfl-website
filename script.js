@@ -4,6 +4,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* === Footer year (always current) === */
+  document.querySelectorAll('[data-year]').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+
   /* === Navbar scroll state === */
   const navbar = document.querySelector('.navbar');
   if (navbar) {
