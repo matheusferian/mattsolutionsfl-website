@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Matt Solutions — Home prototype</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="home.css?v=6">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="home.html" aria-label="Matt Solutions &amp; Services, home">
+      <img src="../logo-icon.png" alt="" width="28" height="28">
+      <span>Matt Solutions</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="../services.html">Services</a>
+      <a href="../service-areas.html">Areas</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-end">
+      <a class="lang" href="../index-pt.html" lang="pt-BR">Português</a>
+      <a class="btn btn-primary btn-small" href="tel:+17542708385">Call</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Computer trouble? Call Matt.</h1>
+        <p class="lede">Repair and IT help for homes and small businesses in Deerfield Beach, Boca Raton, Pompano Beach, and Fort Lauderdale. You see the diagnosis and the price before any work starts.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+17542708385">Call (754) 270-8385</a>
+          <a class="btn btn-secondary" href="sms:+17542708385">Send a text</a>
+        </div>
+        <ul class="facts">
+          <li>Same-day when the schedule allows</li>
+          <li>Mac and Windows</li>
+          <li>On-site, drop-off, or remote</li>
+        </ul>
+      </div>
+      <figure class="hero-photo">
+        <div class="photo-slot" role="img" aria-label="Photo placeholder">
+          <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true"><path fill="currentColor" d="M9 3 7.2 5H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.2L15 3H9Zm3 5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/></svg>
+          <span>Your photo goes here:<br>Matt at the bench, or on a job</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">What can I help with?</h2>
+      <div class="service-groups">
+        <div class="group">
+          <h3>Computers</h3>
+          <ul>
+            <li><strong>Slow or not starting</strong><span>Boot failures, crashes, overheating, broken ports.</span></li>
+            <li><strong>Viruses and pop-ups</strong><span>Malware removed and the system locked down again.</span></li>
+            <li><strong>SSD and RAM upgrades</strong><span>Starts in seconds. Your files moved over, no reinstall.</span></li>
+            <li><strong>Tune-up and cleaning</strong><span>Dust, thermal paste, startup clutter. Quieter and cooler.</span></li>
+            <li><strong>Backups</strong><span>Local, cloud, or both, set up before something breaks.</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Wi-Fi and networks</h3>
+          <ul>
+            <li><strong>Weak or dropping Wi-Fi</strong><span>Dead zones and slow speeds found and fixed.</span></li>
+            <li><strong>Home and office networks</strong><span>Routers, switches, cabling, and security settings.</span></li>
+            <li><strong>Small business IT</strong><span>Workstations, printers, shared drives, accounts.</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Websites and simple systems</h3>
+          <ul>
+            <li><strong>Business websites</strong><span>Fast, works on phones, no monthly page-builder fees.</span></li>
+            <li><strong>Simple business systems</strong><span>Customer and job tracking, booking, quotes, inventory.</span></li>
+            <li><strong>Domain and business email</strong><span>you@yourbusiness.com, set up so it doesn&rsquo;t land in spam.</span></li>
+          </ul>
+        </div>
+      </div>
+      <a class="text-link" href="../services.html">All services and details</a>
+    </div>
+  </section>
+
+  <!-- SIGNATURE: SERVICE ORDER -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <h2 id="process-title">How a repair works</h2>
+      <p class="section-lede">Every job gets a written service order. Here is one filling in.</p>
+
+      <div class="process-grid">
+        <div class="ticket-wrap">
+          <article class="ticket" id="ticket" aria-label="Example service order">
+            <header class="ticket-head">
+              <img src="../logo-icon.png" alt="" width="30" height="30">
+              <div>
+                <p class="ticket-org">Matt Solutions &amp; Services LLC</p>
+                <p class="ticket-meta">Service order <span class="num">MATT-2026-0001</span></p>
+              </div>
+              <p class="ticket-date" id="ticket-date">Nov 6, 2026</p>
+            </header>
+
+            <dl class="fields">
+              <div class="field" data-at="1">
+                <dt>Problem reported</dt>
+                <dd>Laptop takes four minutes to start.</dd>
+              </div>
+              <div class="field" data-at="2">
+                <dt>Diagnosis</dt>
+                <dd>Hard drive is failing. Files are safe.</dd>
+              </div>
+              <div class="field" data-at="3">
+                <dt>Quote</dt>
+                <dd>New SSD and file transfer. Price in writing, before work starts.<span class="stamp" aria-hidden="true">Approved by you</span></dd>
+              </div>
+              <div class="field" data-at="4">
+                <dt>Work done</dt>
+                <dd>SSD installed, files moved. Starts in 15 seconds.</dd>
+              </div>
+            </dl>
+
+            <footer class="ticket-foot">
+              <p class="status"><span class="dot" aria-hidden="true"></span><span class="when-progress">In progress</span><span class="when-done">Ready for pickup</span></p>
+              <p class="copy-note">Customer copy</p>
+            </footer>
+          </article>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-step="1">
+            <h3><span class="n">1</span>Tell me what&rsquo;s going on</h3>
+            <p>Call, text, or send the form. A couple of sentences is enough to get started.</p>
+          </li>
+          <li class="step" data-step="2">
+            <h3><span class="n">2</span>Diagnosis first</h3>
+            <p>I find the real cause before touching anything else. The diagnostic fee is quoted up front.</p>
+          </li>
+          <li class="step" data-step="3">
+            <h3><span class="n">3</span>You approve the price</h3>
+            <p>A plain-English explanation and the price in writing. Nothing happens until you say yes.</p>
+          </li>
+          <li class="step" data-step="4">
+            <h3><span class="n">4</span>Fixed and explained</h3>
+            <p>I show you what was done, and you keep a copy of the service order.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS + FAQ -->
+  <section class="info">
+    <div class="wrap info-grid">
+      <div class="areas">
+        <h2>Where I work</h2>
+        <p>On-site visits in Deerfield Beach, Boca Raton, Pompano Beach, and Fort Lauderdale. Deerfield Beach gets the fastest response.</p>
+        <p>Remote help works anywhere for software problems, viruses, and setup.</p>
+        <a class="text-link" href="../service-areas.html">Service area details</a>
+      </div>
+      <div class="faq">
+        <h2>Common questions</h2>
+        <details>
+          <summary>Do you come to me, or do I drop it off?</summary>
+          <p>Both. Hardware repairs are usually fastest as a drop-off. Wi-Fi, network, and anything hard to move gets an on-site visit.</p>
+        </details>
+        <details>
+          <summary>How much does a repair cost?</summary>
+          <p>It depends on the problem. You get the diagnosis and a written price before any repair starts, and nothing is billed without your approval.</p>
+        </details>
+        <details>
+          <summary>Do you work on Macs?</summary>
+          <p>Yes. Mac desktops and MacBooks, and Windows desktops and laptops.</p>
+        </details>
+        <details>
+          <summary>Is my data safe?</summary>
+          <p>If a repair carries any risk to your files, you&rsquo;re told before work starts and a backup is recommended first.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL -->
+  <section class="call" aria-labelledby="call-title">
+    <div class="wrap">
+      <h2 id="call-title">Tell me what&rsquo;s going on.</h2>
+      <a class="big-phone" href="tel:+17542708385">(754) 270-8385</a>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+17542708385">Call now</a>
+        <a class="btn btn-secondary" href="sms:+17542708385">Send a text</a>
+        <a class="text-link" href="../contact.html">Or use the contact form</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p>&copy; <span data-year>2026</span> Matt Solutions &amp; Services LLC, Deerfield Beach, Florida</p>
+    <nav aria-label="Footer">
+      <a href="../services.html">Services</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="https://instagram.com/mattsolutionsfl" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="home.js?v=6"></script>
+</body>
+</html>
