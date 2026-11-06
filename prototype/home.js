@@ -68,6 +68,35 @@
     }));
   }
 
+
+  /* Videos: never play for reduced motion; pause when off screen. */
+  const vids = [...document.querySelectorAll('video.bg-video')];
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduceMotion.matches) {
+    vids.forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+  } else if ('IntersectionObserver' in window) {
+    const vio = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { const p = e.target.play(); if (p) p.catch(() => {}); } else e.target.pause();
+    }), { threshold: 0.15 });
+    vids.forEach(v => vio.observe(v));
+  }
+
+  /* Repair band grows to full width as it reaches the middle of the screen. */
+  const band = document.getElementById('band-frame');
+  if (band && !reduceMotion.matches) {
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const r = band.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const p = Math.min(1, Math.max(0, (vh - r.top) / (vh * 0.75)));
+      band.style.setProperty('--p', p.toFixed(3));
+    };
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
   if (!ticket || !steps.length || !('IntersectionObserver' in window)) return;
   document.documentElement.classList.add('js');
 

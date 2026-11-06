@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex">
   <title>Matt Solutions — Home prototype</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="home.css?v=8">
+  <link rel="stylesheet" href="home.css?v=9">
 </head>
 <body>
 
@@ -35,6 +35,11 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/hero.jpg">
+        <source src="media/hero.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <h1>Computer trouble? Call Matt.</h1>
@@ -108,6 +113,45 @@
         </div>
       </div>
       <a class="text-link" href="../services.html">All services and details</a>
+    </div>
+  </section>
+
+  <!-- REPAIR BAND: video grows to full width as it scrolls in -->
+  <section class="band" aria-labelledby="band-title">
+    <div class="band-frame" id="band-frame">
+      <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/repair.jpg" aria-hidden="true">
+        <source src="media/repair.mp4" type="video/mp4">
+      </video>
+      <div class="band-copy">
+        <h2 id="band-title">Fixed at the bench, not guessed at.</h2>
+        <p>Every repair starts with a diagnosis. You see what&rsquo;s wrong before anything gets replaced.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEMS -->
+  <section class="systems" aria-labelledby="systems-title">
+    <div class="wrap systems-grid">
+      <div class="systems-media">
+        <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/systems.jpg" aria-hidden="true">
+          <source src="media/systems.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="systems-copy">
+        <h2 id="systems-title">Run the business, not the spreadsheets.</h2>
+        <p class="section-lede">Small systems built around how you already work, plus fast websites that bring customers in.</p>
+        <ul class="systems-list">
+          <li>Customer and job tracking</li>
+          <li>Online booking with instant alerts</li>
+          <li>Quotes and simple invoices</li>
+          <li>Inventory and orders</li>
+          <li>Business websites and email</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="../contact.html">Tell me how you work</a>
+          <a class="btn btn-secondary" href="sms:+17542708385?&amp;body=Hi%20Matt%2C%20I%20need%20a%20website%20or%20a%20simple%20system%20for%20my%20business.">Send a text</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -235,6 +279,6 @@
   </div>
 </footer>
 
-<script src="home.js?v=8"></script>
+<script src="home.js?v=9"></script>
 </body>
 </html>
