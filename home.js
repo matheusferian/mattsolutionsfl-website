@@ -5,11 +5,52 @@
   const steps = [...document.querySelectorAll('.step')];
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 
+  const PT = (document.documentElement.lang || '').toLowerCase().startsWith('pt');
   const date = document.getElementById('ticket-date');
-  if (date) date.textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  if (date) date.textContent = new Date().toLocaleDateString(PT ? 'pt-BR' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
   /* "What's going on?" picker: plain answers + a pre-written text message. */
-  const PROBLEMS = {
+  const PROBLEMS_PT = {
+    slow: {
+      cause: 'HD envelhecendo, muitos programas abrindo junto ou superaquecimento.',
+      fix: 'Primeiro o diagnóstico. Muitas vezes, um SSD novo ou uma limpeza.',
+      remote: 'Às vezes. Problema de peça precisa de visita ou de deixar o computador.',
+      sms: 'Oi Matt, meu computador está lento ou não liga.'
+    },
+    virus: {
+      cause: 'Extensão maliciosa no navegador, download falso ou pop-up de golpe.',
+      fix: 'Remoção do vírus, limpeza do navegador e ajustes de segurança.',
+      remote: 'Normalmente, sim.',
+      tip: 'Se um pop-up mandar você ligar para um número de suporte, não ligue.',
+      sms: 'Oi Matt, acho que meu computador está com vírus ou pop-ups.'
+    },
+    wifi: {
+      cause: 'Posição do roteador, roteador antigo ou aparelhos demais.',
+      fix: 'Visita no local, ajustes melhores ou um sistema mesh.',
+      remote: 'Normalmente precisa de visita.',
+      sms: 'Oi Matt, meu Wi-Fi fica caindo.'
+    },
+    printer: {
+      cause: 'Atualização de driver, configuração alterada ou senha nova.',
+      fix: 'Reconectar, atualizar e testar junto com você.',
+      remote: 'Normalmente, sim.',
+      sms: 'Oi Matt, minha impressora ou meu e-mail não está funcionando.'
+    },
+    files: {
+      cause: 'Pasta apagada, HD com defeito ou problema de sincronização.',
+      fix: 'Recuperação quando possível e depois um backup para não acontecer de novo.',
+      remote: 'Depende do disco.',
+      tip: 'Pare de usar o computador ou o disco até ele ser examinado. Isso aumenta a chance de recuperar.',
+      sms: 'Oi Matt, perdi alguns arquivos e preciso de ajuda.'
+    },
+    web: {
+      cause: 'Negócio rodando no papel, no WhatsApp e em planilhas.',
+      fix: 'Um site rápido ou um sistema simples feito do jeito que você trabalha.',
+      remote: 'Sim, quase tudo a distância.',
+      sms: 'Oi Matt, preciso de um site ou de um sistema simples para o meu negócio.'
+    }
+  };
+  const PROBLEMS_EN = {
     slow: {
       cause: 'An aging hard drive, too many startup programs, or overheating.',
       fix: 'A diagnosis first. Often an SSD upgrade or a cleanup.',
@@ -49,6 +90,7 @@
       sms: 'Hi Matt, I need a website or a simple system for my business.'
     }
   };
+  const PROBLEMS = PT ? PROBLEMS_PT : PROBLEMS_EN;
   const answer = document.getElementById('answer');
   const sms = document.getElementById('answer-sms');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');

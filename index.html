@@ -21,16 +21,12 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Matt Solutions & Services LLC | Computer Repair & IT Support" />
   <meta name="twitter:description" content="Fast, reliable computer repair and IT support across South Florida." />
-
-      <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="logo.png" sizes="any" type="image/png">
     <link rel="apple-touch-icon" href="logo.png">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css?v=1" />
+    <link rel="preload" as="image" href="media/hero.jpg" />
 
   <!-- JSON-LD LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -56,526 +52,275 @@
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <div class="brand-lockup">
-          <img src="logo-icon.png" alt="Matt Solutions icon" class="brand-icon" loading="eager">
-          <div class="brand-text">
-            <span class="brand-primary">MATT</span>
-            <span class="brand-secondary">Solutions &amp; Services</span>
-          </div>
-        </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="service-areas.html">Areas</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    <div class="lang-switcher">
-        <a href="index.html" class="lang-btn active">EN</a>
-        <a href="index-pt.html" class="lang-btn">PT</a>
-      </div>
-      <a href="https://instagram.com/mattsolutionsfl" target="_blank" rel="noopener" class="nav-ig-btn" aria-label="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-      <a href="tel:+17542708385" class="btn btn-primary nav-cta">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-        (754) 270-8385
-      </a>
-      <div class="nav-flags" role="navigation" aria-label="Language switcher">
-        <a href="index.html" class="nav-flag nav-flag-active" aria-label="English" aria-current="page">🇺🇸</a>
-        <a href="index-pt.html" class="nav-flag" aria-label="Portuguese" >🇧🇷</a>
-      </div>
-      <button class="nav-hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Matt Solutions &amp; Services, home">
+      <img src="logo-icon.png" alt="" width="28" height="28">
+      <span>Matt Solutions</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="services.html">Services</a>
+      <a href="service-areas.html">Areas</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-end">
+      <a class="lang" href="index-pt.html" lang="pt-BR">Português</a>
+      <a class="btn btn-primary btn-small" href="tel:+17542708385">Call</a>
     </div>
   </div>
-  <nav class="nav-mobile">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="service-areas.html">Service Areas</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="tel:+17542708385" class="btn btn-primary">Call (754) 270-8385</a>
-  </nav>
-</nav>
+</header>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-badge">Serving South Florida</div>
-        <h1 class="hero-title">Computer Problems?<br><em>We Fix Them.</em></h1>
-        <p class="hero-sub">Fast, reliable IT support for homes and small businesses across South Florida.</p>
-        <p class="hero-service-line">Computer Repair &bull; Wi-Fi &bull; Networks &bull; Websites &amp; Systems</p>
-        <div class="hero-actions">
-          <a href="tel:+17542708385" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="17" height="17"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-            Call Now — (754) 270-8385
-          </a>
-          <a href="sms:+17542708385" class="btn btn-sms">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="17" height="17"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" /></svg>
-            Text Us
-          </a>
-          <a href="contact.html" class="btn btn-outline">Request Free Quote</a>
-        </div>
-        <div class="hero-trust">
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>Same-Day Service Available</div>
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>Residential &amp; Small Business</div>
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>Remote &amp; On-Site Support</div>
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>South Florida Coverage</div>
-        </div>
-      </div>
+<main id="main">
 
-      <!-- Visual Panel -->
-      <div class="hero-visual">
-        <div class="hero-trust-panel">
-          <div class="htp-item"><span class="htp-check">✓</span><span>Same-Day Service Available</span></div>
-          <div class="htp-item"><span class="htp-check">✓</span><span>Residential &amp; Small Business</span></div>
-          <div class="htp-item"><span class="htp-check">✓</span><span>Remote &amp; On-Site Support</span></div>
-          <div class="htp-item"><span class="htp-check">✓</span><span>South Florida Coverage</span></div>
-        </div>
-      </div>
-  </div>
-</section>
-
-<!-- ===== SERVICES OVERVIEW ===== -->
-<section class="section section-alt" id="services">
-  <div class="container">
-    <div class="center">
-      <div class="section-label">What We Fix</div>
-      <h2 class="section-title">Services Built Around Your Needs</h2>
-      <p class="section-sub">From slow computers to complex network setups — straightforward diagnosis, clear pricing, real results.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/hero.jpg">
+        <source src="media/hero.mp4" type="video/mp4">
+      </video>
     </div>
-    <div class="services-grid">
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" /></svg>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Computer trouble? Call Matt.</h1>
+        <p class="lede">Repair and IT help for homes and small businesses in Deerfield Beach, Boca Raton, Pompano Beach, and Fort Lauderdale. You see the diagnosis and the price before any work starts.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+17542708385">Call (754) 270-8385</a>
+          <a class="btn btn-secondary" href="sms:+17542708385">Send a text</a>
         </div>
-        <h3>Slow Computer?</h3>
-        <p>Hardware faults, software crashes, boot failures, overheating, broken ports — diagnosed and repaired correctly the first time.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>IT Support</h3>
-        <p>Day-to-day technical issues handled quickly. Software installs, OS problems, printer headaches, account lockouts, and more.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>Virus & Malware Removal</h3>
-        <p>Complete threat elimination — ransomware, spyware, adware, and rootkits removed and your system hardened against reinfection.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"/><path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"/><path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"/></svg>
-        </div>
-        <h3>SSD Upgrade</h3>
-        <p>Replace your slow mechanical drive with a modern SSD. Boot in seconds, open apps instantly. Data migrated cleanly — no reinstall needed.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>RAM Upgrades</h3>
-        <p>More RAM means smoother multitasking. Compatibility verified before purchase — no wasted money on incompatible modules.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>Computer Tune-Up</h3>
-        <p>Deep cleaning of startup programs, registry, temp files, and background processes. Your machine running the way it should again.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>Internal Cleaning</h3>
-        <p>Compressed air, brush, and thermal paste replacement. Overheating resolved, fans quieted, longevity extended.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.084-5.084 13.3-5.084 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM10 17a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>Weak Wi-Fi?</h3>
-        <p>Intermittent drops, slow speeds, and dead zones — diagnosed and resolved with practical solutions, not guesswork.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>Network Setup</h3>
-        <p>Home and office networks built right — routers, switches, security settings, and wired/wireless configuration from scratch or overhaul.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>Small Business IT Support</h3>
-        <p>Workstation setup, printer configuration, shared drives, basic security policies — dependable tech support without enterprise overhead.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"/><path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"/><path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"/></svg>
-        </div>
-        <h3>Data Backup Help</h3>
-        <p>Set up reliable backup routines — local, cloud, or both. Protect photos, documents, and business files before something goes wrong.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16A8 8 0 0010 2zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd" /></svg>
-        </div>
-        <h3>Need a Business Website?</h3>
-        <p>A fast, mobile-friendly website for your business — hand-coded, no page builders, no monthly fees. Includes domain setup, business email, and contact forms.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
-        </div>
-        <h3>Need a Simple Business System?</h3>
-        <p>Customer and job tracking, online booking, quotes, inventory, and simple dashboards — small custom tools built around how your business works.</p>
-      </div>
-
-    </div>
-    <div style="text-align:center; margin-top: 2.5rem;">
-      <a href="services.html" class="btn btn-outline">Full Service Details →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== HOW IT WORKS ===== -->
-<section class="section" id="process">
-  <div class="container">
-    <div class="center">
-      <div class="section-label">The Process</div>
-      <h2 class="section-title">Simple from Start to Finish</h2>
-      <p class="section-sub">No confusing jargon. No surprise charges. Just a clear process that respects your time.</p>
-    </div>
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="process-num">1</div>
-        <h3>Reach Out</h3>
-        <p>Call, text, or use the contact form. Describe what's happening and we'll respond fast.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">2</div>
-        <h3>Diagnosis</h3>
-        <p>We identify the root cause — not just the symptoms — before any work begins.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">3</div>
-        <h3>Clear Quote</h3>
-        <p>You get a plain-English explanation and an upfront price. No work done without your approval.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">4</div>
-        <h3>Fixed Right</h3>
-        <p>Repair completed to a high standard. We walk you through what was done before we leave.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SERVICE AREAS TEASER ===== -->
-<section class="section section-alt" id="areas">
-  <div class="container">
-    <div class="center">
-      <div class="section-label">Where We Work</div>
-      <h2 class="section-title">Serving South Florida</h2>
-      <p class="section-sub">On-site visits and remote support available across Broward and Palm Beach counties.</p>
-    </div>
-    <div class="areas-grid">
-      <div class="area-card">
-        <div class="area-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-        </div>
-        <div>
-          <h3>Deerfield Beach</h3>
-          <p>Primary service location — fastest response times.</p>
-        </div>
-      </div>
-      <div class="area-card">
-        <div class="area-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-        </div>
-        <div>
-          <h3>Boca Raton</h3>
-          <p>Homes, condos, and small businesses throughout Boca.</p>
-        </div>
-      </div>
-      <div class="area-card">
-        <div class="area-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-        </div>
-        <div>
-          <h3>Pompano Beach</h3>
-          <p>Residential and commercial clients in Pompano.</p>
-        </div>
-      </div>
-      <div class="area-card">
-        <div class="area-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-        </div>
-        <div>
-          <h3>Fort Lauderdale</h3>
-          <p>On-site and remote support across Fort Lauderdale.</p>
-        </div>
-      </div>
-    </div>
-    <div style="text-align:center; margin-top:2rem;">
-      <a href="service-areas.html" class="btn btn-outline">Full Area Details →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FAQ ===== -->
-<section class="section" id="faq">
-  <div class="container">
-    <div class="center">
-      <div class="section-label">FAQ</div>
-      <h2 class="section-title">Common Questions</h2>
-    </div>
-    <div class="faq-list">
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Do you offer on-site repairs or drop-off only?
-          <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-        </button>
-        <div class="faq-answer">Both options are available. For most hardware repairs, bringing the machine in is the fastest route. For network issues, Wi-Fi problems, or when moving equipment isn't practical, on-site visits are available across the service area.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          How much does a typical computer repair cost?
-          <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-        </button>
-        <div class="faq-answer">Pricing depends on the specific issue. You always get a clear quote after diagnosis — before any work begins. There are no hidden fees, and you are never billed for work you haven't approved. Contact us to discuss your situation and get an estimate.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Do you work on both Windows PCs and Macs?
-          <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-        </button>
-        <div class="faq-answer">Yes. Services cover Windows desktops and laptops across all major versions, as well as Mac desktops and MacBooks. If you're not sure whether your device qualifies, just call or message and we'll let you know right away.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Will my data be safe during a repair?
-          <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-        </button>
-        <div class="faq-answer">Data preservation is a priority in every repair. If a procedure carries any risk to your files, you will be told before work starts and a backup step will be recommended. Your data is treated with care and confidentiality at all times.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          How quickly can you respond?
-          <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-        </button>
-        <div class="faq-answer">For calls and texts during business hours, responses are typically within the hour. Same-day service is frequently available depending on schedule and location. For urgent issues, calling or texting (754) 270-8385 is the fastest way to reach us.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Do you offer remote support?
-          <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-        </button>
-        <div class="faq-answer">Yes. Many software issues, slowdowns, virus removals, and configuration problems can be resolved remotely without any need to bring your machine in or schedule an on-site visit. Remote sessions are conducted securely and only with your permission.</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== GOOGLE REVIEWS ===== -->
-<section class="section section-alt" id="reviews" hidden>
-  <div class="container">
-    <div class="center">
-      <div class="section-label">Google Reviews</div>
-      <h2 class="section-title">Google Reviews</h2>
-      <p class="section-sub" style="margin-bottom:0;">Coming Soon</p>
-    </div>
-    <div class="reviews-placeholder-card">
-      <div class="reviews-placeholder-icon">
-        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-        </svg>
-      </div>
-      <div class="reviews-placeholder-body">
-        <p class="reviews-placeholder-title">Our Google Business Profile is currently being finalized.</p>
-        <p class="reviews-placeholder-sub">Customer reviews and ratings will appear here once verified.</p>
-        <!-- Future: star rating, review count, and testimonials will load here -->
-        <div class="reviews-future-slots" aria-hidden="true">
-          <div class="reviews-future-slot"></div>
-          <div class="reviews-future-slot"></div>
-          <div class="reviews-future-slot"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== TRUSTED LOCAL + INSTAGRAM ===== -->
-<section class="section" id="trust">
-  <div class="container">
-    <div class="trust-ig-grid">
-
-      <div class="trust-checklist-block">
-        <div class="section-label">Local Technology Support</div>
-        <h2 class="section-title">Trusted Local Technology Support</h2>
-        <ul class="trust-checklist">
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Same-Day Availability</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Remote Support Available</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>PC &amp; Mac Support</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Local South Florida Business</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Honest Pricing</li>
+        <ul class="facts">
+          <li>Same-day when the schedule allows</li>
+          <li>Mac and Windows</li>
+          <li>On-site, drop-off, or remote</li>
         </ul>
       </div>
 
-      <div class="trust-ig-block">
-        <div class="trust-ig-card">
-          <div class="trust-ig-header">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            <span>Follow @mattsolutionsfl</span>
-          </div>
-          <p class="trust-ig-text">See recent repairs, upgrades, networking projects, website work, and technology tips.</p>
-          <a href="https://instagram.com/mattsolutionsfl" target="_blank" rel="noopener" class="btn btn-primary">Follow on Instagram</a>
-        </div>
-      </div>
+      <aside class="picker" aria-labelledby="picker-title">
+        <h2 id="picker-title" class="picker-title">What&rsquo;s going on?</h2>
+        <fieldset class="picker-options">
+          <legend class="visually-hidden">Pick the problem closest to yours</legend>
+          <label><input type="radio" name="problem" value="slow" checked><span>Slow or won&rsquo;t start</span></label>
+          <label><input type="radio" name="problem" value="virus"><span>Virus or pop-ups</span></label>
+          <label><input type="radio" name="problem" value="wifi"><span>Wi-Fi keeps dropping</span></label>
+          <label><input type="radio" name="problem" value="printer"><span>Printer or email</span></label>
+          <label><input type="radio" name="problem" value="files"><span>Lost files</span></label>
+          <label><input type="radio" name="problem" value="web"><span>Website or system</span></label>
+        </fieldset>
 
+        <div class="answer" id="answer" aria-live="polite">
+          <dl>
+            <div><dt>Often caused by</dt><dd data-k="cause">An aging hard drive, too many startup programs, or overheating.</dd></div>
+            <div><dt>What usually fixes it</dt><dd data-k="fix">A diagnosis first. Often an SSD upgrade or a cleanup.</dd></div>
+            <div><dt>Remote help</dt><dd data-k="remote">Sometimes. Hardware problems need a drop-off or visit.</dd></div>
+          </dl>
+          <p class="tip" data-k="tip" hidden></p>
+          <a class="btn btn-primary btn-block" id="answer-sms" href="sms:+17542708385?&amp;body=Hi%20Matt%2C%20my%20computer%20is%20slow%20or%20won%27t%20start.">Text Matt about this</a>
+        </div>
+      </aside>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== CTA BANNER ===== -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="cta-banner">
-      <div>
-        <div class="section-label">Ready to Get Started?</div>
-        <h2 style="font-size:1.8rem; margin-bottom:0.5rem;">Your Computer Problem Has a Solution</h2>
-        <p style="color:rgba(255,255,255,0.6); max-width:480px;">Call or send a text. Describe what's happening and we'll figure out the fastest path to a fix.</p>
+  <!-- SERVICES -->
+  <section class="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">What can I help with?</h2>
+      <div class="service-groups">
+        <div class="group">
+          <h3>Computers</h3>
+          <ul>
+            <li><strong>Slow or not starting</strong><span>Boot failures, crashes, overheating, broken ports.</span></li>
+            <li><strong>Viruses and pop-ups</strong><span>Malware removed and the system locked down again.</span></li>
+            <li><strong>SSD and RAM upgrades</strong><span>Starts in seconds. Your files moved over, no reinstall.</span></li>
+            <li><strong>Tune-up and cleaning</strong><span>Dust, thermal paste, startup clutter. Quieter and cooler.</span></li>
+            <li><strong>Backups</strong><span>Local, cloud, or both, set up before something breaks.</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Wi-Fi and networks</h3>
+          <ul>
+            <li><strong>Weak or dropping Wi-Fi</strong><span>Dead zones and slow speeds found and fixed.</span></li>
+            <li><strong>Home and office networks</strong><span>Routers, switches, cabling, and security settings.</span></li>
+            <li><strong>Small business IT</strong><span>Workstations, printers, shared drives, accounts.</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Websites and simple systems</h3>
+          <ul>
+            <li><strong>Business websites</strong><span>Fast, works on phones, no monthly page-builder fees.</span></li>
+            <li><strong>Simple business systems</strong><span>Customer and job tracking, booking, quotes, inventory.</span></li>
+            <li><strong>Domain and business email</strong><span>you@yourbusiness.com, set up so it doesn&rsquo;t land in spam.</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="cta-actions">
-        <a href="tel:+17542708385" class="btn btn-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-          (754) 270-8385
-        </a>
-        <a href="sms:+17542708385" class="btn btn-sms">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" /></svg>
-          Text Us
-        </a>
-        <a href="contact.html" class="btn btn-outline">Send a Message</a>
+      <a class="text-link" href="services.html">All services and details</a>
+    </div>
+  </section>
+
+  <!-- REPAIR BAND: video grows to full width as it scrolls in -->
+  <section class="band" aria-labelledby="band-title">
+    <div class="band-frame" id="band-frame">
+      <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/repair.jpg" aria-hidden="true">
+        <source src="media/repair.mp4" type="video/mp4">
+      </video>
+      <div class="band-copy">
+        <h2 id="band-title">Fixed at the bench, not guessed at.</h2>
+        <p>Every repair starts with a diagnosis. You see what&rsquo;s wrong before anything gets replaced.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="footer-logo"><img src="logo-full.png" alt="Matt Solutions &amp; Services LLC" class="footer-logo-img" loading="lazy"></a>
-        <p>Reliable computer repair and IT support for homes and small businesses across South Florida. Honest pricing. Real results.</p>
-                <div class="footer-follow">
-          <p class="footer-follow-label">Follow Us</p>
-          <a href="https://instagram.com/mattsolutionsfl" target="_blank" rel="noopener" class="footer-ig-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            <span class="footer-ig-handle">@mattsolutionsfl</span>
-          </a>
-        </div>
-        <div class="footer-actions">
-          <a href="tel:+17542708385" class="btn btn-call">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-            (754) 270-8385
-          </a>
-          <a href="sms:+17542708385" class="btn btn-sms" style="font-size:0.82rem; padding:0.55rem 1rem;">
-            Text Us
-          </a>
-        </div>
+  <!-- SYSTEMS -->
+  <section class="systems" aria-labelledby="systems-title">
+    <div class="wrap systems-grid">
+      <div class="systems-media">
+        <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/systems.jpg" aria-hidden="true">
+          <source src="media/systems.mp4" type="video/mp4">
+        </video>
       </div>
-
-      <div>
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="service-areas.html">Service Areas</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <div class="systems-copy">
+        <h2 id="systems-title">Run the business, not the spreadsheets.</h2>
+        <p class="section-lede">Small systems built around how you already work, plus fast websites that bring customers in.</p>
+        <ul class="systems-list">
+          <li>Customer and job tracking</li>
+          <li>Online booking with instant alerts</li>
+          <li>Quotes and simple invoices</li>
+          <li>Inventory and orders</li>
+          <li>Business websites and email</li>
         </ul>
-      </div>
-
-      <div>
-        <h4>Services</h4>
-        <ul class="footer-links">
-          <li><a href="services.html">Computer Repair</a></li>
-          <li><a href="services.html">Virus Removal</a></li>
-          <li><a href="services.html">SSD Upgrades</a></li>
-          <li><a href="services.html">Network Setup</a></li>
-          <li><a href="services.html">IT Support</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contact</h4>
-        <div class="footer-contact-list">
-          <div class="footer-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-            <a href="tel:+17542708385">(754) 270-8385</a>
-          </div>
-          <div class="footer-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
-            <a href="mailto:mattsolutionsfl@gmail.com">mattsolutionsfl@gmail.com</a>
-          </div>
-          <div class="footer-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-            <span>Deerfield Beach, FL &amp; surrounding areas</span>
-          </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact.html">Tell me how you work</a>
+          <a class="btn btn-secondary" href="sms:+17542708385?&amp;body=Hi%20Matt%2C%20I%20need%20a%20website%20or%20a%20simple%20system%20for%20my%20business.">Send a text</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <p>&copy; <span data-year>2026</span> Matt Solutions &amp; Services LLC. All rights reserved.</p>
-      <p><a href="https://mattsolutionsfl.com">mattsolutionsfl.com</a></p>
+  <!-- SIGNATURE: SERVICE ORDER -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <h2 id="process-title">How a repair works</h2>
+      <p class="section-lede">Every job gets a written service order. Here is one filling in.</p>
+
+      <div class="process-grid">
+        <div class="ticket-wrap">
+          <article class="ticket" id="ticket" aria-label="Example service order">
+            <header class="ticket-head">
+              <img src="logo-icon.png" alt="" width="30" height="30">
+              <div>
+                <p class="ticket-org">Matt Solutions &amp; Services LLC</p>
+                <p class="ticket-meta">Service order <span class="num">MATT-2026-0001</span></p>
+              </div>
+              <p class="ticket-date" id="ticket-date">Nov 6, 2026</p>
+            </header>
+
+            <dl class="fields">
+              <div class="field" data-at="1">
+                <dt>Problem reported</dt>
+                <dd>Laptop takes four minutes to start.</dd>
+              </div>
+              <div class="field" data-at="2">
+                <dt>Diagnosis</dt>
+                <dd>Hard drive is failing. Files are safe.</dd>
+              </div>
+              <div class="field" data-at="3">
+                <dt>Quote</dt>
+                <dd>New SSD and file transfer. Price in writing, before work starts.<span class="stamp" aria-hidden="true">Approved by you</span></dd>
+              </div>
+              <div class="field" data-at="4">
+                <dt>Work done</dt>
+                <dd>SSD installed, files moved. Starts in 15 seconds.</dd>
+              </div>
+            </dl>
+
+            <footer class="ticket-foot">
+              <p class="status"><span class="dot" aria-hidden="true"></span><span class="when-progress">In progress</span><span class="when-done">Ready for pickup</span></p>
+              <p class="copy-note">Customer copy</p>
+            </footer>
+          </article>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-step="1">
+            <h3><span class="n">1</span>Tell me what&rsquo;s going on</h3>
+            <p>Call, text, or send the form. A couple of sentences is enough to get started.</p>
+          </li>
+          <li class="step" data-step="2">
+            <h3><span class="n">2</span>Diagnosis first</h3>
+            <p>I find the real cause before touching anything else. The diagnostic fee is quoted up front.</p>
+          </li>
+          <li class="step" data-step="3">
+            <h3><span class="n">3</span>You approve the price</h3>
+            <p>A plain-English explanation and the price in writing. Nothing happens until you say yes.</p>
+          </li>
+          <li class="step" data-step="4">
+            <h3><span class="n">4</span>Fixed and explained</h3>
+            <p>I show you what was done, and you keep a copy of the service order.</p>
+          </li>
+        </ol>
+      </div>
     </div>
+  </section>
+
+  <!-- AREAS + FAQ -->
+  <section class="info">
+    <div class="wrap info-grid">
+      <div class="areas">
+        <h2>Where I work</h2>
+        <p>On-site visits in Deerfield Beach, Boca Raton, Pompano Beach, and Fort Lauderdale. Deerfield Beach gets the fastest response.</p>
+        <p>Remote help works anywhere for software problems, viruses, and setup.</p>
+        <a class="text-link" href="service-areas.html">Service area details</a>
+      </div>
+      <div class="faq">
+        <h2>Common questions</h2>
+        <details>
+          <summary>Do you come to me, or do I drop it off?</summary>
+          <p>Both. Hardware repairs are usually fastest as a drop-off. Wi-Fi, network, and anything hard to move gets an on-site visit.</p>
+        </details>
+        <details>
+          <summary>How much does a repair cost?</summary>
+          <p>It depends on the problem. You get the diagnosis and a written price before any repair starts, and nothing is billed without your approval.</p>
+        </details>
+        <details>
+          <summary>Do you work on Macs?</summary>
+          <p>Yes. Mac desktops and MacBooks, and Windows desktops and laptops.</p>
+        </details>
+        <details>
+          <summary>Is my data safe?</summary>
+          <p>If a repair carries any risk to your files, you&rsquo;re told before work starts and a backup is recommended first.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL -->
+  <section class="call" aria-labelledby="call-title">
+    <div class="wrap">
+      <h2 id="call-title">Tell me what&rsquo;s going on.</h2>
+      <a class="big-phone" href="tel:+17542708385">(754) 270-8385</a>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+17542708385">Call now</a>
+        <a class="btn btn-secondary" href="sms:+17542708385">Send a text</a>
+        <a class="text-link" href="contact.html">Or use the contact form</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p>&copy; <span data-year>2026</span> Matt Solutions &amp; Services LLC, Deerfield Beach, Florida</p>
+    <nav aria-label="Footer">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://instagram.com/mattsolutionsfl" rel="noopener">Instagram</a>
+    </nav>
   </div>
 </footer>
 
-<div id="toast"></div>
-<script src="script.js"></script>
+<script src="home.js?v=1"></script>
 </body>
 </html>

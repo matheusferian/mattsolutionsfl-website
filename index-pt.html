@@ -17,16 +17,12 @@
   <meta property="og:url" content="https://mattsolutionsfl.com/index-pt.html" />
   <meta property="og:site_name" content="Matt Solutions & Services LLC" />
   <meta property="og:image" content="https://mattsolutionsfl.com/og-image.jpg" />
-
-      <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="logo.png" sizes="any" type="image/png">
     <link rel="apple-touch-icon" href="logo.png">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css?v=1" />
+    <link rel="preload" as="image" href="media/hero.jpg" />
 
   <script type="application/ld+json">
   {
@@ -59,394 +55,275 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index-pt.html" class="nav-logo">
-        <div class="brand-lockup">
-          <img src="logo-icon.png" alt="Matt Solutions icon" class="brand-icon" loading="eager">
-          <div class="brand-text">
-            <span class="brand-primary">MATT</span>
-            <span class="brand-secondary">Solutions &amp; Services</span>
-          </div>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index-pt.html" aria-label="Matt Solutions &amp; Services, início">
+      <img src="logo-icon.png" alt="" width="28" height="28">
+      <span>Matt Solutions</span>
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="services-pt.html">Serviços</a>
+      <a href="service-areas-pt.html">Regiões</a>
+      <a href="about-pt.html">Sobre</a>
+      <a href="contact-pt.html">Contato</a>
+    </nav>
+    <div class="nav-end">
+      <a class="lang" href="index.html" lang="en">English</a>
+      <a class="btn btn-primary btn-small" href="tel:+17542708385">Ligar</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/hero.jpg">
+        <source src="media/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Computador com problema? Chame o Matt.</h1>
+        <p class="lede">Conserto e suporte de TI para casas e pequenas empresas em Deerfield Beach, Boca Raton, Pompano Beach e Fort Lauderdale. Você vê o diagnóstico e o preço antes de qualquer serviço.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+17542708385">Ligar (754) 270-8385</a>
+          <a class="btn btn-secondary" href="sms:+17542708385">Mandar mensagem</a>
         </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index-pt.html">Início</a></li>
-        <li><a href="services-pt.html">Serviços</a></li>
-        <li><a href="service-areas-pt.html">Áreas</a></li>
-        <li><a href="about-pt.html">Sobre</a></li>
-        <li><a href="contact-pt.html">Contato</a></li>
-      </ul>
-    <div class="lang-switcher">
-        <a href="index.html" class="lang-btn">EN</a>
-        <a href="index-pt.html" class="lang-btn active">PT</a>
-      </div>
-      <a href="https://instagram.com/mattsolutionsfl" target="_blank" rel="noopener" class="nav-ig-btn" aria-label="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-      <a href="tel:+17542708385" class="btn btn-primary nav-cta">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-        (754) 270-8385
-      </a>
-      <div class="nav-flags" role="navigation" aria-label="Language switcher">
-        <a href="index.html" class="nav-flag" aria-label="English" >🇺🇸</a>
-        <a href="index-pt.html" class="nav-flag nav-flag-active" aria-label="Portuguese" aria-current="page">🇧🇷</a>
-      </div>
-      <button class="nav-hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <nav class="nav-mobile">
-    <a href="index-pt.html">Início</a>
-    <a href="services-pt.html">Serviços</a>
-    <a href="service-areas-pt.html">Regiões</a>
-    <a href="about-pt.html">Sobre</a>
-    <a href="contact-pt.html">Contato</a>
-    <a href="tel:+17542708385" class="btn btn-primary">Ligar (754) 270-8385</a>
-  </nav>
-</nav>
-
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-badge">Atendendo o Sul da Flórida</div>
-        <h1 class="hero-title">Problemas no Computador?<br><em>Nós Resolvemos.</em></h1>
-        <p class="hero-sub">Suporte técnico rápido e confiável para residências e pequenas empresas em South Florida.</p>
-        <p class="hero-service-line">Conserto de Computadores &bull; Wi-Fi &bull; Redes &bull; Sites e Sistemas</p>
-        <div class="hero-actions">
-          <a href="tel:+17542708385" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="17" height="17"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-            Ligar agora — (754) 270-8385
-          </a>
-          <a href="sms:+17542708385" class="btn btn-sms">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="17" height="17"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" /></svg>
-            Enviar mensagem
-          </a>
-          <a href="contact-pt.html" class="btn btn-outline">Solicitar Orçamento</a>
-        </div>
-        <div class="hero-trust">
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>Atendimento no Mesmo Dia</div>
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>Suporte Remoto Disponível</div>
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>PC e Mac</div>
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>Residências e Pequenas Empresas</div>
-          <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>Preço Transparente</div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-trust-panel">
-          <div class="htp-item"><span class="htp-check">✓</span><span>Atendimento no Mesmo Dia</span></div>
-          <div class="htp-item"><span class="htp-check">✓</span><span>Suporte Remoto Disponível</span></div>
-          <div class="htp-item"><span class="htp-check">✓</span><span>PC e Mac</span></div>
-          <div class="htp-item"><span class="htp-check">✓</span><span>Residências e Pequenas Empresas</span></div>
-          <div class="htp-item"><span class="htp-check">✓</span><span>Preço Transparente</span></div>
-        </div>
-      </div>
-  </div>
-</section>
-
-<!-- SERVIÇOS -->
-<section class="section section-alt" id="servicos">
-  <div class="container">
-    <div class="center">
-      <div class="section-label">O que resolvemos</div>
-      <h2 class="section-title">Serviços pensados para você</h2>
-      <p class="section-sub">Do computador lento ao problema de rede mais complexo — diagnóstico honesto, preço justo e solução de verdade.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" /></svg></div>
-        <h3>Conserto de Computadores</h3>
-        <p>Defeitos de hardware, travamentos, falhas na inicialização, superaquecimento — diagnosticado e resolvido corretamente na primeira vez.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg></div>
-        <h3>Suporte de TI</h3>
-        <p>Problemas do dia a dia resolvidos com agilidade: instalações, sistema operacional, impressoras, contas bloqueadas e muito mais.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg></div>
-        <h3>Remoção de Vírus e Malware</h3>
-        <p>Eliminação completa de ransomware, spyware, adware e rootkits — e seu sistema protegido para evitar reinfecções.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"/><path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"/><path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"/></svg></div>
-        <h3>Upgrade de SSD</h3>
-        <p>Troque o HD lento por um SSD moderno. O computador inicia em segundos e os programas abrem na hora. Migração dos dados incluída — sem reinstalar nada.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></div>
-        <h3>Upgrade de RAM</h3>
-        <p>Mais memória significa mais fluidez na hora de usar vários programas ao mesmo tempo. Compatibilidade verificada antes de comprar qualquer peça.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" /></svg></div>
-        <h3>Otimização do Computador</h3>
-        <p>Limpeza profunda: programas na inicialização, arquivos temporários, serviços desnecessários e atualização de drivers. Seu computador voltando a funcionar como devia.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd" /></svg></div>
-        <h3>Limpeza Interna</h3>
-        <p>Remoção de poeira, limpeza dos coolers e troca de pasta térmica. Superaquecimento resolvido, ventoinhas mais silenciosas e vida útil maior para o equipamento.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.084-5.084 13.3-5.084 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM10 17a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg></div>
-        <h3>Solução de Problemas de Wi-Fi</h3>
-        <p>Quedas frequentes, velocidade baixa e pontos sem sinal — diagnóstico correto, sem tentativa e erro. Solução prática que funciona de verdade.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" /></svg></div>
-        <h3>Configuração de Rede</h3>
-        <p>Redes domésticas e comerciais montadas do zero — roteadores, switches, cabeamento, Wi-Fi e configurações de segurança.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" /></svg></div>
-        <h3>Suporte de TI para Empresas</h3>
-        <p>Configuração de computadores, impressoras, armazenamento compartilhado e suporte técnico confiável para pequenas empresas — sem custo de equipe interna.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"/><path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"/><path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"/></svg></div>
-        <h3>Ajuda com Backup de Dados</h3>
-        <p>Configuramos rotinas de backup confiáveis — HD externo, nuvem ou os dois. Suas fotos, documentos e arquivos protegidos antes que algo dê errado.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16A8 8 0 0010 2zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd" /></svg></div>
-        <h3>Sites para Pequenas Empresas</h3>
-        <p>Site profissional e adaptado para celular — código limpo, sem plataformas lentas e sem mensalidade. Inclui configuração de domínio, e-mail profissional e formulário de contato.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg></div>
-        <h3>Sistemas Simples para Empresas</h3>
-        <p>Controle de clientes e serviços, agendamento online, orçamentos, estoque e relatórios — ferramentas sob medida, feitas do jeito que a sua empresa trabalha.</p>
-      </div>
-    </div>
-    <div style="text-align:center; margin-top: 2.5rem;">
-      <a href="services-pt.html" class="btn btn-outline">Ver todos os serviços →</a>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="section" id="processo">
-  <div class="container">
-    <div class="center">
-      <div class="section-label">Como funciona</div>
-      <h2 class="section-title">Simples do início ao fim</h2>
-      <p class="section-sub">Sem jargão técnico, sem cobranças surpresa. Um processo claro que respeita o seu tempo.</p>
-    </div>
-    <div class="process-grid">
-      <div class="process-step"><div class="process-num">1</div><h3>Entre em contato</h3><p>Ligue, mande mensagem ou use o formulário. Descreva o que está acontecendo e respondemos rápido.</p></div>
-      <div class="process-step"><div class="process-num">2</div><h3>Diagnóstico</h3><p>Identificamos a causa real do problema — não só os sintomas — antes de começar qualquer serviço.</p></div>
-      <div class="process-step"><div class="process-num">3</div><h3>Orçamento claro</h3><p>Você recebe uma explicação simples e um preço fechado. Nenhum serviço é executado sem sua aprovação.</p></div>
-      <div class="process-step"><div class="process-num">4</div><h3>Resolvido de vez</h3><p>Serviço feito com qualidade. Explicamos tudo o que foi feito antes de encerrar o atendimento.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- REGIÕES -->
-<section class="section section-alt" id="regioes">
-  <div class="container">
-    <div class="center">
-      <div class="section-label">Onde atendemos</div>
-      <h2 class="section-title">Sul da Flórida</h2>
-      <p class="section-sub">Visitas presenciais e suporte remoto disponíveis no Condado de Broward e sul do Condado de Palm Beach.</p>
-    </div>
-    <div class="areas-grid">
-      <div class="area-card"><div class="area-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg></div><div><h3>Deerfield Beach</h3><p>Localização principal — tempo de resposta mais rápido.</p></div></div>
-      <div class="area-card"><div class="area-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg></div><div><h3>Boca Raton</h3><p>Residências, condomínios e pequenas empresas em Boca.</p></div></div>
-      <div class="area-card"><div class="area-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg></div><div><h3>Pompano Beach</h3><p>Atendimento residencial e comercial em Pompano.</p></div></div>
-      <div class="area-card"><div class="area-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg></div><div><h3>Fort Lauderdale</h3><p>Suporte presencial e remoto em Fort Lauderdale.</p></div></div>
-    </div>
-    <div style="text-align:center; margin-top:2rem;"><a href="service-areas-pt.html" class="btn btn-outline">Ver todas as regiões →</a></div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq">
-  <div class="container">
-    <div class="center"><div class="section-label">Dúvidas frequentes</div><h2 class="section-title">Perguntas Comuns</h2></div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question">Vocês fazem atendimento em domicílio ou só recebem o equipamento?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></button>
-        <div class="faq-answer">As duas opções estão disponíveis. Para a maioria dos consertos de hardware, trazer o equipamento é o caminho mais rápido. Para problemas de rede, Wi-Fi ou quando não é prático mover o equipamento, o atendimento presencial pode ser feito diretamente na sua casa ou empresa.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">Quanto custa um conserto típico?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></button>
-        <div class="faq-answer">O preço depende do problema. Você sempre recebe um orçamento claro após o diagnóstico — antes de qualquer serviço ser executado. Sem taxas escondidas, e nada é cobrado sem a sua aprovação. Entre em contato para discutir sua situação.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">Vocês atendem PC e Mac?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></button>
-        <div class="faq-answer">Sim. Atendemos desktops e notebooks com Windows em todas as versões principais, além de Macs e MacBooks. Se tiver dúvida sobre o seu equipamento, ligue ou mande mensagem — respondemos na hora.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">Meus dados ficam seguros durante o conserto?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></button>
-        <div class="faq-answer">A preservação dos seus dados é prioridade em todo atendimento. Se algum procedimento representar risco aos arquivos, você será avisado antes e será recomendado um backup. Seus dados são tratados com cuidado e sigilo.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">Vocês fazem suporte remoto?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></button>
-        <div class="faq-answer">Sim. Muitos problemas de software, lentidão, vírus e configurações são resolvidos remotamente — sem precisar trazer o equipamento ou agendar visita. As sessões remotas são feitas com segurança e somente com a sua permissão.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== SUPORTE LOCAL + INSTAGRAM ===== -->
-<section class="section" id="trust">
-  <div class="container">
-    <div class="trust-ig-grid">
-
-      <div class="trust-checklist-block">
-        <div class="section-label">Suporte Local de Tecnologia</div>
-        <h2 class="section-title">Suporte Técnico Local de Confiança</h2>
-        <ul class="trust-checklist">
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Atendimento no Mesmo Dia</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Suporte Remoto Disponível</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>PC e Mac</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Residências e Pequenas Empresas</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>Preço Transparente</li>
+        <ul class="facts">
+          <li>No mesmo dia, quando a agenda permite</li>
+          <li>Mac e Windows</li>
+          <li>No local, deixando o aparelho ou a distância</li>
         </ul>
       </div>
 
-      <div class="trust-ig-block">
-        <div class="trust-ig-card">
-          <div class="trust-ig-header">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            <span>Siga @mattsolutionsfl</span>
-          </div>
-          <p class="trust-ig-text">Veja reparos recentes, upgrades, projetos de rede, criação de sites e dicas de tecnologia.</p>
-          <a href="https://instagram.com/mattsolutionsfl" target="_blank" rel="noopener" class="btn btn-primary">Seguir no Instagram</a>
+      <aside class="picker" aria-labelledby="picker-title">
+        <h2 id="picker-title" class="picker-title">O que está acontecendo?</h2>
+        <fieldset class="picker-options">
+          <legend class="visually-hidden">Escolha o problema mais parecido com o seu</legend>
+          <label><input type="radio" name="problem" value="slow" checked><span>Lento ou não liga</span></label>
+          <label><input type="radio" name="problem" value="virus"><span>Vírus ou pop-ups</span></label>
+          <label><input type="radio" name="problem" value="wifi"><span>Wi-Fi caindo</span></label>
+          <label><input type="radio" name="problem" value="printer"><span>Impressora ou e-mail</span></label>
+          <label><input type="radio" name="problem" value="files"><span>Arquivos perdidos</span></label>
+          <label><input type="radio" name="problem" value="web"><span>Site ou sistema</span></label>
+        </fieldset>
+
+        <div class="answer" id="answer" aria-live="polite">
+          <dl>
+            <div><dt>Costuma ser causado por</dt><dd data-k="cause">HD envelhecendo, muitos programas abrindo junto ou superaquecimento.</dd></div>
+            <div><dt>O que costuma resolver</dt><dd data-k="fix">Primeiro o diagnóstico. Muitas vezes, um SSD novo ou uma limpeza.</dd></div>
+            <div><dt>Dá para resolver a distância?</dt><dd data-k="remote">Às vezes. Problema de peça precisa de visita ou de deixar o computador.</dd></div>
+          </dl>
+          <p class="tip" data-k="tip" hidden></p>
+          <a class="btn btn-primary btn-block" id="answer-sms" href="sms:+17542708385?&amp;body=Oi%20Matt%2C%20meu%20computador%20est%C3%A1%20lento%20ou%20n%C3%A3o%20liga.">Mandar mensagem para o Matt</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">Como posso ajudar?</h2>
+      <div class="service-groups">
+        <div class="group">
+          <h3>Computadores</h3>
+          <ul>
+            <li><strong>Lento ou não liga</strong><span>Falha ao ligar, travamentos, superaquecimento, entradas quebradas.</span></li>
+            <li><strong>Vírus e pop-ups</strong><span>Vírus removido e o sistema protegido de novo.</span></li>
+            <li><strong>Upgrade de SSD e memória</strong><span>Liga em segundos. Seus arquivos vão junto, sem reinstalar.</span></li>
+            <li><strong>Revisão e limpeza</strong><span>Poeira, pasta térmica, programas inúteis. Mais silencioso e frio.</span></li>
+            <li><strong>Backup</strong><span>No HD, na nuvem ou nos dois, antes que algo quebre.</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Wi-Fi e redes</h3>
+          <ul>
+            <li><strong>Wi-Fi fraco ou caindo</strong><span>Pontos sem sinal e lentidão encontrados e resolvidos.</span></li>
+            <li><strong>Redes de casa e escritório</strong><span>Roteadores, switches, cabos e segurança.</span></li>
+            <li><strong>TI para pequenas empresas</strong><span>Computadores, impressoras, pastas compartilhadas, contas.</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Sites e sistemas simples</h3>
+          <ul>
+            <li><strong>Sites para empresas</strong><span>Rápidos, funcionam no celular, sem mensalidade de plataforma.</span></li>
+            <li><strong>Sistemas simples</strong><span>Controle de clientes e serviços, agendamento, orçamentos, estoque.</span></li>
+            <li><strong>Domínio e e-mail profissional</strong><span>voce@suaempresa.com, configurado para não cair no spam.</span></li>
+          </ul>
         </div>
       </div>
-
+      <a class="text-link" href="services-pt.html">Todos os serviços e detalhes</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-
-<!-- ===== AVALIAÇÕES GOOGLE ===== -->
-<section class="section section-alt" id="reviews" hidden>
-  <div class="container">
-    <div class="center">
-      <div class="section-label">Avaliações no Google</div>
-      <h2 class="section-title">Avaliações no Google</h2>
-      <p class="section-sub" style="margin-bottom:0;">Em breve</p>
-    </div>
-    <div class="reviews-placeholder-card">
-      <div class="reviews-placeholder-icon">
-        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-        </svg>
-      </div>
-      <div class="reviews-placeholder-body">
-        <p class="reviews-placeholder-title">Nosso Perfil da Empresa no Google está sendo finalizado.</p>
-        <p class="reviews-placeholder-sub">Avaliações e comentários de clientes aparecerão aqui após a verificação.</p>
-        <div class="reviews-future-slots" aria-hidden="true">
-          <div class="reviews-future-slot"></div>
-          <div class="reviews-future-slot"></div>
-          <div class="reviews-future-slot"></div>
-        </div>
+  <!-- REPAIR BAND: video grows to full width as it scrolls in -->
+  <section class="band" aria-labelledby="band-title">
+    <div class="band-frame" id="band-frame">
+      <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/repair.jpg" aria-hidden="true">
+        <source src="media/repair.mp4" type="video/mp4">
+      </video>
+      <div class="band-copy">
+        <h2 id="band-title">Consertado na bancada, não no chute.</h2>
+        <p>Todo conserto começa com diagnóstico. Você vê o que está errado antes de qualquer peça ser trocada.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section section-alt">
-  <div class="container">
-    <div class="cta-banner">
-      <div>
-        <div class="section-label">Pronto para resolver?</div>
-        <h2 style="font-size:1.8rem; margin-bottom:0.5rem;">Seu problema tem solução</h2>
-        <p style="color:rgba(255,255,255,0.6); max-width:480px;">Ligue, mande mensagem ou envie um e-mail. Descreva o que está acontecendo e encontramos juntos o caminho mais rápido para a solução.</p>
+  <!-- SYSTEMS -->
+  <section class="systems" aria-labelledby="systems-title">
+    <div class="wrap systems-grid">
+      <div class="systems-media">
+        <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="media/systems.jpg" aria-hidden="true">
+          <source src="media/systems.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="cta-actions">
-        <a href="tel:+17542708385" class="btn btn-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-          (754) 270-8385
-        </a>
-        <a href="sms:+17542708385" class="btn btn-sms">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" /></svg>
-          Mensagem de texto
-        </a>
-        <a href="contact-pt.html" class="btn btn-outline">Enviar mensagem</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index-pt.html" class="footer-logo"><img src="logo-full.png" alt="Matt Solutions &amp; Services LLC" class="footer-logo-img" loading="lazy"></a>
-        <p>Conserto de computadores e suporte de TI para residências e pequenas empresas no Sul da Flórida. Preços justos. Resultados reais.</p>
-                <div class="footer-follow">
-          <p class="footer-follow-label">Siga no Instagram</p>
-          <a href="https://instagram.com/mattsolutionsfl" target="_blank" rel="noopener" class="footer-ig-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            <span class="footer-ig-handle">@mattsolutionsfl</span>
-          </a>
-        </div>
-        <div class="footer-actions">
-          <a href="tel:+17542708385" class="btn btn-call">(754) 270-8385</a>
-          <a href="sms:+17542708385" class="btn btn-sms" style="font-size:0.82rem; padding:0.55rem 1rem;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="13" height="13"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" /></svg>
-            Mensagem
-          </a>
-        </div>
-      </div>
-      <div>
-        <h4>Links rápidos</h4>
-        <ul class="footer-links">
-          <li><a href="index-pt.html">Início</a></li>
-          <li><a href="services-pt.html">Serviços</a></li>
-          <li><a href="service-areas-pt.html">Áreas Atendidas</a></li>
-          <li><a href="about-pt.html">Sobre</a></li>
-          <li><a href="contact-pt.html">Contato</a></li>
+      <div class="systems-copy">
+        <h2 id="systems-title">Cuide do negócio, não das planilhas.</h2>
+        <p class="section-lede">Sistemas pequenos feitos do jeito que você já trabalha, e sites rápidos que trazem clientes.</p>
+        <ul class="systems-list">
+          <li>Controle de clientes e serviços</li>
+          <li>Agendamento online com aviso na hora</li>
+          <li>Orçamentos e faturas simples</li>
+          <li>Estoque e pedidos</li>
+          <li>Sites e e-mail profissional</li>
         </ul>
-      </div>
-      <div>
-        <h4>Serviços</h4>
-        <ul class="footer-links">
-          <li><a href="services-pt.html">Conserto de Computadores</a></li>
-          <li><a href="services-pt.html">Remoção de Vírus</a></li>
-          <li><a href="services-pt.html">Upgrade de SSD</a></li>
-          <li><a href="services-pt.html">Configuração de Rede</a></li>
-          <li><a href="services-pt.html">Suporte de TI</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contato</h4>
-        <div class="footer-contact-list">
-          <div class="footer-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
-            <a href="tel:+17542708385">(754) 270-8385</a>
-          </div>
-          <div class="footer-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
-            <a href="mailto:mattsolutionsfl@gmail.com">mattsolutionsfl@gmail.com</a>
-          </div>
-          <div class="footer-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-            <span>Deerfield Beach, FL e região</span>
-          </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact-pt.html">Me conte como você trabalha</a>
+          <a class="btn btn-secondary" href="sms:+17542708385?&amp;body=Oi%20Matt%2C%20preciso%20de%20um%20site%20ou%20de%20um%20sistema%20simples%20para%20o%20meu%20neg%C3%B3cio.">Mandar mensagem</a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; <span data-year>2026</span> Matt Solutions &amp; Services LLC. Todos os direitos reservados.</p>
-      <p><a href="https://mattsolutionsfl.com">mattsolutionsfl.com</a></p>
+  </section>
+
+  <!-- SIGNATURE: SERVICE ORDER -->
+  <section class="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <h2 id="process-title">Como funciona um conserto</h2>
+      <p class="section-lede">Todo serviço tem uma ordem de serviço por escrito. Veja uma sendo preenchida.</p>
+
+      <div class="process-grid">
+        <div class="ticket-wrap">
+          <article class="ticket" id="ticket" aria-label="Exemplo de ordem de serviço">
+            <header class="ticket-head">
+              <img src="logo-icon.png" alt="" width="30" height="30">
+              <div>
+                <p class="ticket-org">Matt Solutions &amp; Services LLC</p>
+                <p class="ticket-meta">Ordem de serviço <span class="num">MATT-2026-0001</span></p>
+              </div>
+              <p class="ticket-date" id="ticket-date">Nov 6, 2026</p>
+            </header>
+
+            <dl class="fields">
+              <div class="field" data-at="1">
+                <dt>Problema relatado</dt>
+                <dd>Notebook leva quatro minutos para ligar.</dd>
+              </div>
+              <div class="field" data-at="2">
+                <dt>Diagnóstico</dt>
+                <dd>HD com defeito. Arquivos estão seguros.</dd>
+              </div>
+              <div class="field" data-at="3">
+                <dt>Orçamento</dt>
+                <dd>SSD novo e cópia dos arquivos. Preço por escrito, antes do serviço.<span class="stamp" aria-hidden="true">Aprovado por você</span></dd>
+              </div>
+              <div class="field" data-at="4">
+                <dt>Serviço feito</dt>
+                <dd>SSD instalado, arquivos copiados. Liga em 15 segundos.</dd>
+              </div>
+            </dl>
+
+            <footer class="ticket-foot">
+              <p class="status"><span class="dot" aria-hidden="true"></span><span class="when-progress">Em andamento</span><span class="when-done">Pronto para retirar</span></p>
+              <p class="copy-note">Via do cliente</p>
+            </footer>
+          </article>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-step="1">
+            <h3><span class="n">1</span>Me conte o que está acontecendo</h3>
+            <p>Ligue, mande mensagem ou use o formulário. Duas frases já bastam para começar.</p>
+          </li>
+          <li class="step" data-step="2">
+            <h3><span class="n">2</span>Primeiro o diagnóstico</h3>
+            <p>Eu encontro a causa real antes de mexer em qualquer coisa. O valor do diagnóstico é informado antes.</p>
+          </li>
+          <li class="step" data-step="3">
+            <h3><span class="n">3</span>Você aprova o preço</h3>
+            <p>Uma explicação simples e o preço por escrito. Nada é feito sem o seu sim.</p>
+          </li>
+          <li class="step" data-step="4">
+            <h3><span class="n">4</span>Consertado e explicado</h3>
+            <p>Eu mostro o que foi feito, e você fica com uma via da ordem de serviço.</p>
+          </li>
+        </ol>
+      </div>
     </div>
+  </section>
+
+  <!-- AREAS + FAQ -->
+  <section class="info">
+    <div class="wrap info-grid">
+      <div class="areas">
+        <h2>Onde atendo</h2>
+        <p>Visitas no local em Deerfield Beach, Boca Raton, Pompano Beach e Fort Lauderdale. Deerfield Beach tem o atendimento mais rápido.</p>
+        <p>O suporte a distância funciona em qualquer lugar para programas, vírus e configurações.</p>
+        <a class="text-link" href="service-areas-pt.html">Detalhes das regiões</a>
+      </div>
+      <div class="faq">
+        <h2>Perguntas frequentes</h2>
+        <details>
+          <summary>Você vem até mim ou eu levo o aparelho?</summary>
+          <p>Os dois. Conserto de peça costuma ser mais rápido deixando o aparelho. Wi-Fi, rede e o que é difícil de levar têm visita no local.</p>
+        </details>
+        <details>
+          <summary>Quanto custa um conserto?</summary>
+          <p>Depende do problema. Você recebe o diagnóstico e o preço por escrito antes de qualquer conserto, e nada é cobrado sem a sua aprovação.</p>
+        </details>
+        <details>
+          <summary>Você atende Mac?</summary>
+          <p>Sim. iMac e MacBook, e computadores e notebooks Windows.</p>
+        </details>
+        <details>
+          <summary>Meus dados ficam seguros?</summary>
+          <p>Se um conserto tiver qualquer risco para os seus arquivos, você é avisado antes e eu recomendo fazer um backup primeiro.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL -->
+  <section class="call" aria-labelledby="call-title">
+    <div class="wrap">
+      <h2 id="call-title">Me conte o que está acontecendo.</h2>
+      <a class="big-phone" href="tel:+17542708385">(754) 270-8385</a>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+17542708385">Ligar agora</a>
+        <a class="btn btn-secondary" href="sms:+17542708385">Mandar mensagem</a>
+        <a class="text-link" href="contact-pt.html">Ou use o formulário de contato</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p>&copy; <span data-year>2026</span> Matt Solutions &amp; Services LLC, Deerfield Beach, Flórida</p>
+    <nav aria-label="Rodapé">
+      <a href="services-pt.html">Serviços</a>
+      <a href="about-pt.html">Sobre</a>
+      <a href="contact-pt.html">Contato</a>
+      <a href="https://instagram.com/mattsolutionsfl" rel="noopener">Instagram</a>
+    </nav>
   </div>
 </footer>
 
-<div id="toast"></div>
-<script src="script.js"></script>
+<script src="home.js?v=1"></script>
 </body>
 </html>
